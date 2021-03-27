@@ -5,60 +5,163 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Document</title>
+        <title>Adventure Awaits</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        
     </head>
 
     <body>
-        <h1>Hello and Bonjoir</h1>
-
+        <body style="background-color: rgb(99, 153, 99);"></bodystyle>
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-gradient">
+        <nav class="navbar navbar-expand-lg navbar-text bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Fixed top</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://i.postimg.cc/xdWJDrPY/terrestrial-globe-151897-1280.png" alt="vector graphic of a world globe" width="60" height="60">
+                </a>
+                
+                <!-- this button code is not functioning correctly
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-bars"></i>
+                </button>-->
+                
+                <button class="navbar-toggler hidden-md-up pull-right" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    ☰
                 </button>
+                
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar nav">
+                    <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="costaRica.html">Option 1</a>
+                            <a class="nav-link" href="costaRica.html">Costa Rica</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="vancouver.html">Option 2</a>
+                            <a class="nav-link active" aria-current="page" href="vancouver.html">Vancouver</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="washingtonDC.html">Option 3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link-disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="washingtonDC.html">Washington DC</a>
                         </li>
                     </ul>
                 </div>
+
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
         </nav>
-
+        
         <div class="container-fluid">
             <div class="jumbotron jumbotron-fluid">
                 <div class="container">
-                    <h1 class="display-3">Adventure Awaits!</h1>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Vancouver_panorama_stanleypark.jpg/512px-Vancouver_panorama_stanleypark.jpg" class=-"img-fluid" alt="Vancouver panorama stanleypark" title="Image by Bupper, Public domain, via Wikimedia Commons">
-                    <p class="lead">Let's have a look at this weeks adventure destinations
+                    <h1 class="display-3">Vancouver, British Columbia, Canada</h1>
+                    <p class="lead">Vibrant and diverse, this coastal city offers year round entertainment!
                     </p>
                 </div>  
             </div>
-        <script src="node_modules/jquery/dist/jquery.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> 
+
+            <div class="card-group">
+                <div class="card">
+                    <img class="card-img" src="https://i.postimg.cc/j2VstDxj/toteme-2581457-1280.jpg" height="300px" alt="First nations totem poles in forest setting">
+                    <div class="card-img-overlay">
+                           
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <img class="card-img" src="https://i.postimg.cc/256jwp9C/vancouver-2349924-1280.jpg" height="300px" alt="View of coastline with city in background">
+                    <div class="card-img-overlay">
+                        
+                    </div>
+                </div>
+                        
+                <div class="card">
+                    <img class="card-img" src="https://i.postimg.cc/bJ4vr6Tp/grouse-mountain-707743-1280.jpg" height="300px" alt="View from ski lift on snowy mountain">
+                    <div class="card-img-overlay">
+                        
+                    </div>
+                </div>
+                       
+                <div class="card">
+                    <img class="card-img" src="https://i.postimg.cc/T2yLxb9T/canada-1236782-1280.jpg" height="300px" alt="View of coastline walkway adjacent to forest with mountains in background">
+                    <div class="card-img-overlay">
+    
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="container-md align-self-center">
+                <table class="table table-bordered table-responsive-sm">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Popular Destination</th>
+                        <th>Area</th>
+                        <th>Known For</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-info">
+                        <th scope="row">1</th>
+                        <td>VanDusen Botanical Garden</td>
+                        <td>Vancouver</td>
+                        <td>Gardens, wildlife, hedge maze</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Ambleside Beach</td>
+                        <td>West Vancouver</td>
+                        <td>Family-favorite, sand castles, views</td>
+                    </tr>
+
+                    <tr class="table-info">
+                        <th scope="row">3</th>
+                        <td>Cypress Mountain</td>
+                        <td>West Vancouver</td>
+                        <td>Downhill skiing, snowtubing park, cross-country skiing</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Capilano Suspension Bridge Park</td>
+                        <td>North Vancouver</td>
+                        <td>Suspension bridge, hiking, history</td>
+                    </tr>
+                    
+                    <tr class="table-info" >
+                        <th scope="row">5</th>
+                        <td>Grouse Mountain</td>
+                        <td>North Vancouver</td>
+                        <td>Tram ride, grizzly bear habitat, zipline</td>
+                    </tr>
+                </tbody>
+                </table>   
+            </div>
+
+            <div class="d-flex row-cols-sm-3 justify-content-center">  
+                <a href="https://www.tripsavvy.com/vancouver-4139150" class="btn btn-primary">To learn more, please visit the reference website here</a>
+            </div>
+
+        </div>    
+        
+        
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+              <span class="text-muted">meraki11 || 03/2021</span>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
+    
 </html>
